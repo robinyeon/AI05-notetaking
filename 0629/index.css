@@ -1,0 +1,36 @@
+.title {
+  color: lightcoral;
+}
+
+#www {
+  background-color: lightgrey;
+  color: grey;
+}
+
+.image {
+  margin: 50px 0 50px 0;
+}
+
+#internet,
+#browser {
+  text-decoration: none;
+  color: darkcyan;
+}
+
+input[type="text"] {
+  background-color: lightblue;
+}
+
+input[type="button"] {
+  border-radius: 5px;
+}
+
+div > p {
+  font-size: 80px;
+  font-weight: bold;
+  color: tomato;
+}
+
+div > p:hover {
+  color: burlywood;
+}
