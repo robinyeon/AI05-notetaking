@@ -1,0 +1,23 @@
+<script>
+  let a = "a";
+
+  function A() {
+    function B() {
+      function C() {
+        let d = "d";
+        console.log(a, b, c, d);
+      }
+      let c = "c";
+      console.log(a, b, c);
+      C();
+    }
+
+    let b = "b";
+    console.log(a, b); // a, b
+    B();
+  }
+
+  A();
+</script>
+
+<!-- 단순히 A함수 안에서 B를 호출`B()`했다고해서 자식 함수가 되는게 아니다.A의 스코프 안에 B가 있을 때 자식인것. -->

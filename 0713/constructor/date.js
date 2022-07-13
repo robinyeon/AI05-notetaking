@@ -34,10 +34,11 @@ const now = new Date();
 function Address(name, address) {
   this.name = name;
   this.address = address;
-}
+} // 생성자 함수에 return을 하는 것은 의미가 없기 때문에 쓰지 않습니다.
 
 let lee = Address("이", "인천");
-console.log(lee); // undefined가 뜬다.
+console.log(lee); // undefined가 뜬다. 인스턴스화해서 메모리에 올려야 콘솔에 찍히는건데 아직 new로 올라가지 않았으니 undefined.
+// 객체로 사용하기 위해 메모리에 올리는 과정이 인스턴스다.
 
 let park = new Address("박", "성동구"); // new라고 하는 건 생성자를 활용하여 새로운 값을 집어넣은 데이터를 만드는 것이다. 그리고 이것의 type은 함수가 아닌 Object!
 let yeon = new Address("연", "화성시");

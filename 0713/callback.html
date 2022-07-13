@@ -1,0 +1,24 @@
+<!-- JS에서 콜백은 너무너무너무 중요 -->
+<script>
+  // function normal(a, b) {
+  //   return a + b;
+  // }
+
+  // normal(1, 2);
+
+  function addCallback(fn) {
+    setTimeout(function () {
+      let sum = 1 + 1;
+      console.log(sum);
+      fn();
+    }, 2000);
+  }
+
+  addCallback(function () {
+    console.log("end");
+  });
+
+  // fn()이 콜백함수이지만 통상적으로 전체코드를 콜백이라 일컫기도 한다
+  // 자스에서의 콜백이 다른 언어에서의 콜백과 느낌이 좀 다르다.
+  // 함수를 인자로 받아서 전달 받은 함수인자를 마지막으로 불러내는 것을 콜백이라 한다. 우선은 이정도로 이해.
+</script>
